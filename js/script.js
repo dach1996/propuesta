@@ -14,9 +14,11 @@ function myFunction() {
   let btnSendMessage = document.getElementById("sendMessage");
   if (!btnSendMessage.classList.contains("d-hide"))
     btnSendMessage.classList.add("d-hide");
+  let btnNoResponse = document.getElementById("btnNoResponse");
+  if (!btnNoResponse.classList.contains("d-hide"))
+    btnNoResponse.classList.add("d-hide");
   let btnMain = document.getElementById("nextButtom");
-  if (!btnMain.classList.contains("d-hide"))
-    btnMain.classList.remove("d-hide");
+  if (!btnMain.classList.contains("d-hide")) btnMain.classList.remove("d-hide");
   setTimeout(() => {
     element.classList.remove("loading");
     element.classList.remove("show");
@@ -96,6 +98,7 @@ function myFunction() {
         messageSeleted =
           "'July, sé que estamos pasando uno bonito momento y la verdad quisiera saber si, ¿Quieres Ser Mi Novia?'";
         messageBottonSelected = "Si Quiero!!!";
+        btnNoResponse.classList.remove("d-hide");
         break;
       case 15:
         messageSeleted =

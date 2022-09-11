@@ -40,6 +40,8 @@ h1 {
   display: block;
   width: 100%;
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 p {
@@ -90,7 +92,13 @@ p {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
-
+.four {
+  border-color: #b61613;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #b61613 inset, 0 0 0 0 #b61613;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
 .loading {
   position: fixed;
   top: 0;
