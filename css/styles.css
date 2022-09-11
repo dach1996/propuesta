@@ -8,7 +8,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
-
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 body {
   display: -webkit-box;
   display: -webkit-flex;
