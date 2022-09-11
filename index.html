@@ -2,24 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Eres la Correcta</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" type="image/x-icon" href="/scr/favicon-32x32.png">
   </head>
-  <body>
-    <div id="spin" class="">
-      <div class="spin"></div>
+  <body class="align">
+    <div class="grid align__item">
+      <div class="register">
+        <img
+          style="margin-top: 0"
+          alt=""
+          width="100%"
+          src="/scr/f49bf097dbc30bf2d8901a3bba44e9ab.png"
+        />
+        <h2>¿Te gustaría iniciar?</h2>
+
+        <div class="form__field">
+          <input id="username" type="text" value="July" class="inputForm" />
+        </div>
+        <div class="form__field">
+          <input id="" type="password" class="inputForm" />
+        </div>
+        <input class="btn" type="submit" onclick="start()" value="COMENZAR" />
+      </div>
     </div>
-    <img
-      style="margin-top: 0"
-      alt=""
-      width="100%"
-      src="https://i.pinimg.com/originals/f4/9b/f0/f49bf097dbc30bf2d8901a3bba44e9ab.png"
-    />
-    <h1 style="margin-top: 0" id="text"></h1>
-    <audio src="fondo.mp3"></audio>
-    <button id="nextButtom" onclick="myFunction()" class="btn third">Sí</button>
-    <script src="script.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

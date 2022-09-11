@@ -4,6 +4,7 @@ document.getElementById("nextButtom").innerHTML = "Sí";
 
 let messageCount = 0;
 function myFunction() {
+  if (messageCount > 16) return;
   var element = document.getElementById("spin");
 
   element.classList.add("loading");
@@ -85,7 +86,7 @@ function myFunction() {
         break;
       case 14:
         messageSeleted =
-          "'July, sé que estamos pasando uno bonito momento y la verdad quisiera confirmar algo, ¿Quieres Ser Mi Novia?'";
+          "'July, sé que estamos pasando uno bonito momento y la verdad quisiera saber si, ¿Quieres Ser Mi Novia?'";
         messageBottonSelected = "Si Quiero!!!";
         break;
       case 15:
@@ -96,7 +97,7 @@ function myFunction() {
       case 16:
         messageSeleted =
           "No importa la hora que sea créeme que él estará muy emocionado de escucharte, inténtalo.";
-        messageBottonSelected = "Si Quiero!!!";
+        messageBottonSelected = "Llamar";
         break;
       default:
         messageSeleted = "test 1";
