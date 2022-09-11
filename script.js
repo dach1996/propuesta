@@ -1,12 +1,11 @@
 document.getElementById("text").innerHTML =
   "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
-const audio = document.querySelector("audio");
-audio.volume = 0.2;
-audio.play();
+
 let messageCount = 0;
 function myFunction() {
   var element = document.getElementById("spin");
+
   element.classList.add("loading");
   element.classList.add("show");
   setTimeout(() => {
@@ -20,6 +19,9 @@ function myFunction() {
         messageSeleted =
           "Ya me lo imaginaba, Danny es muy cuidadoso en entregar la clave solo a la persona correcta.";
         messageBottonSelected = "¿Encerio?";
+        const audio = document.querySelector("audio");
+        audio.volume = 0.2;
+        audio.play();
         break;
       case 2:
         messageSeleted =
