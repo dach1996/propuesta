@@ -6,7 +6,7 @@ html {
 }
 body {
   background-color: #354152;
-  color: #7e8ba3;
+  color:  #F3DE8B;
   font-weight: bold;
   margin: 0;
   min-height: 100%;
@@ -27,7 +27,7 @@ body {
 }
 
 input::placeholder {
-  color: #7e8ba3;
+  color: #F3DE8B;
 }
 .form__field {
   margin-bottom: 1rem;
@@ -50,11 +50,11 @@ svg {
   vertical-align: middle;
 }
 a {
-  color: #f1c40f
+  color: #F3DE8B
 }
 .btn {
   font-size: 1.3rem;
-  color:#f1c40f !important;
+  color:#F3DE8B !important;
   font-weight: bold;
   outline: 1;
   padding: 0.5rem 1rem;
@@ -67,12 +67,12 @@ a {
 }
 .inputForm{
   font-size: 1.3rem;
-  color: #7e8ba3 !important;
+  color: #F3DE8B !important;
   outline: 1;
   padding: 0.5rem 1rem;
 }
 .register input {
-  border: 2px solid #242c37;
+  border: 2px solid  #7e8ba3 ;
   border-radius: 999px;
   background-color: transparent;
   text-align: center;
