@@ -5,16 +5,24 @@ document.getElementById("nextButtom").innerHTML = "Sí";
 let messageCount = 0;
 function myFunction() {
   if (messageCount > 16) return;
-  var element = document.getElementById("spin");
-
+  let element = document.getElementById("spin");
   element.classList.add("loading");
   element.classList.add("show");
+
+  let btnCall = document.getElementById("call");
+  if (!btnCall.classList.contains("d-hide")) btnCall.classList.add("d-hide");
+  let btnSendMessage = document.getElementById("sendMessage");
+  if (!btnSendMessage.classList.contains("d-hide"))
+    btnSendMessage.classList.add("d-hide");
+  let btnMain = document.getElementById("nextButtom");
+  if (!btnMain.classList.contains("d-hide"))
+    btnMain.classList.remove("d-hide");
   setTimeout(() => {
     element.classList.remove("loading");
     element.classList.remove("show");
     messageCount += 1;
-    var messageSeleted = "";
-    var messageBottonSelected = "";
+    let messageSeleted = "";
+    let messageBottonSelected = "";
     switch (messageCount) {
       case 1:
         messageSeleted =
@@ -98,6 +106,9 @@ function myFunction() {
         messageSeleted =
           "No importa la hora que sea créeme que él estará muy emocionado de escucharte, inténtalo.";
         messageBottonSelected = "Llamar";
+        btnCall.classList.remove("d-hide");
+        btnSendMessage.classList.remove("d-hide");
+        btnMain.classList.add("d-hide");
         break;
       default:
         messageSeleted = "test 1";
