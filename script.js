@@ -1,7 +1,9 @@
 document.getElementById("text").innerHTML =
   "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
-
+const audio = document.querySelector("audio");
+audio.volume = 0.2;
+audio.play();
 let messageCount = 0;
 function myFunction() {
   var element = document.getElementById("spin");
@@ -98,7 +100,6 @@ function myFunction() {
         messageSeleted = "test 1";
     }
     document.getElementById("text").innerHTML = messageSeleted;
-    document.getElementById("nextButtom").innerHTML =
-      messageBottonSelected;
+    document.getElementById("nextButtom").innerHTML = messageBottonSelected;
   }, 1100);
 }
