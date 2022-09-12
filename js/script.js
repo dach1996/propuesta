@@ -2,7 +2,7 @@ document.getElementById("text").innerHTML =
   "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
 
-let messageCount = 0;
+let messageCount = 1;
 function myFunction() {
   if (messageCount > 16) return;
   let element = document.getElementById("spin");
@@ -96,16 +96,20 @@ function myFunction() {
         break;
       case 14:
         messageSeleted =
-          "'July, sé que estamos pasando uno bonito momento y la verdad quisiera saber si, ¿Quieres Ser Mi Novia?'";
+          "'July, sé que estamos pasando uno bonito momento y la verdad quisiera saber si...'";
+        messageBottonSelected = "...";
+        break;
+      case 15:
+        messageSeleted = "'¿Quieres Ser Mi Novia?'";
         messageBottonSelected = "Si Quiero!!!";
         btnNoResponse.classList.remove("d-hide");
         break;
-      case 15:
+      case 16:
         messageSeleted =
-          "July, creo que el propósito para el que fue creado ha terminado, créeme que Danny estará muy Feliz con la noticia cuando se la cuente, o sabes qué, porque mejor no se lo dices tú.";
+          "July, el propósito para el que fuí creado ha terminado, créeme que Danny estará muy Feliz con la noticia cuando se la cuente, o sabes qué, porque mejor no se lo dices tú.";
         messageBottonSelected = "...";
         break;
-      case 16:
+      case 17:
         messageSeleted =
           "No importa la hora que sea créeme que él estará muy emocionado de escucharte, inténtalo.";
         messageBottonSelected = "Llamar";
