@@ -2,7 +2,7 @@ document.getElementById("text").innerHTML =
   "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
 
-let messageCount = 1;
+let messageCount = 0;
 function myFunction() {
   if (messageCount > 16) return;
   let element = document.getElementById("spin");
