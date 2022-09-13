@@ -2,7 +2,7 @@ document.getElementById("text").innerHTML =
   "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
 
-let messageCount = 13;
+let messageCount = 0;
 function myFunction() {
   if (messageCount > 17) return;
   let element = document.getElementById("spin");
@@ -105,7 +105,7 @@ function myFunction() {
         messageSeleted = "¿Quieres Ser Mi Novia?";
         messageBottonSelected = "Si Quiero!!!";
         btnNoResponse.classList.remove("d-hide");
-        image.src = "scr/heart.png"
+        image.src = "scr/heart.png";
         break;
       case 16:
         messageSeleted =
