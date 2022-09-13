@@ -21,6 +21,7 @@ function myFunction() {
   if (!btnMain.classList.contains("d-hide")) btnMain.classList.remove("d-hide");
   let image = document.getElementById("imageSelected");
   image.src = "scr/dragon-chimuelo-png-4-Transparent-Images.png";
+  if (messageCount == 15) image.src = "scr/heart.png";
   setTimeout(() => {
     element.classList.remove("loading");
     element.classList.remove("show");
@@ -88,7 +89,7 @@ function myFunction() {
         break;
       case 12:
         messageSeleted =
-          "Entonces pensó que yo podría ayudarlo preguntante, ¿te interesa saber? ";
+          "Entonces pensó que yo podría ayudarlo preguntándote, ¿te interesa saber? ";
         messageBottonSelected = "¡Sí!";
         break;
       case 13:
@@ -105,7 +106,6 @@ function myFunction() {
         messageSeleted = "¿Quieres Ser Mi Novia?";
         messageBottonSelected = "Si Quiero!!!";
         btnNoResponse.classList.remove("d-hide");
-        image.src = "scr/heart.png";
         break;
       case 16:
         messageSeleted =
