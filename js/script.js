@@ -2,9 +2,9 @@ document.getElementById("text").innerHTML =
   "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
 
-let messageCount = 0;
+let messageCount = 13;
 function myFunction() {
-  if (messageCount > 16) return;
+  if (messageCount > 17) return;
   let element = document.getElementById("spin");
   element.classList.add("loading");
   element.classList.add("show");
@@ -19,6 +19,8 @@ function myFunction() {
     btnNoResponse.classList.add("d-hide");
   let btnMain = document.getElementById("nextButtom");
   if (!btnMain.classList.contains("d-hide")) btnMain.classList.remove("d-hide");
+  let image = document.getElementById("imageSelected");
+  image.src = "scr/dragon-chimuelo-png-4-Transparent-Images.png";
   setTimeout(() => {
     element.classList.remove("loading");
     element.classList.remove("show");
@@ -100,9 +102,10 @@ function myFunction() {
         messageBottonSelected = "...";
         break;
       case 15:
-        messageSeleted = "'¿Quieres Ser Mi Novia?'";
+        messageSeleted = "¿Quieres Ser Mi Novia?";
         messageBottonSelected = "Si Quiero!!!";
         btnNoResponse.classList.remove("d-hide");
+        image.src = "scr/heart.png"
         break;
       case 16:
         messageSeleted =
