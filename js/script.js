@@ -32,7 +32,7 @@ function myFunction() {
       case 1:
         messageSeleted =
           "Ya me lo imaginaba, Danny es muy cuidadoso en entregar la clave solo a la persona correcta.";
-        messageBottonSelected = "¿Encerio?";
+        messageBottonSelected = "¿Enserio?";
         const audio = document.querySelector("audio");
         audio.volume = 0.2;
         audio.play();
