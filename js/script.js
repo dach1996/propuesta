@@ -21,7 +21,7 @@ function myFunction() {
   if (!btnMain.classList.contains("d-hide")) btnMain.classList.remove("d-hide");
   let image = document.getElementById("imageSelected");
   image.src = "scr/dragon-chimuelo-png-4-Transparent-Images.png";
-  if (messageCount == 15) image.src = "scr/heart.png";
+  if (messageCount == 14) image.src = "scr/heart.png";
   setTimeout(() => {
     element.classList.remove("loading");
     element.classList.remove("show");

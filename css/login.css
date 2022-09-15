@@ -5,7 +5,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: #354152;
+  background-color: #464c54;
   color:  #F3DE8B;
   font-weight: bold;
   margin: 0;
@@ -60,10 +60,20 @@ a {
   padding: 0.5rem 1rem;
 }
 
+
+
+.third {
+  border-color: #1aab15;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #1aab15 inset, 0 0 0 0 #1aab15;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
 .register {
   box-shadow: 0 0 250px #000;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 0.5rem 0.5rem;
 }
 .inputForm{
   font-size: 1.3rem;
