@@ -1,5 +1,5 @@
 document.getElementById("text").innerHTML =
-  "Hola, me presento yo soy “Roby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
+  "Hola, me presento yo soy “Robby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
 document.getElementById("nextButtom").innerHTML = "Sí";
 
 let messageCount = 0;
@@ -39,7 +39,7 @@ function myFunction() {
       case 2:
         messageSeleted =
           "Sabes, no había visto a Danny tan feliz hace mucho tiempo, tan emocionado esperando un mensaje de una chica.";
-        messageBottonSelected = "Continua";
+        messageBottonSelected = "Continúa";
         break;
       case 3:
         messageSeleted =
