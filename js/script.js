@@ -8,7 +8,6 @@ function myFunction() {
   let element = document.getElementById("spin");
   element.classList.add("loading");
   element.classList.add("show");
-
   let btnCall = document.getElementById("call");
   if (!btnCall.classList.contains("d-hide")) btnCall.classList.add("d-hide");
   let btnSendMessage = document.getElementById("sendMessage");
