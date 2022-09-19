@@ -4,7 +4,7 @@ document.getElementById("nextButtom").innerHTML = "Sí";
 
 let messageCount = 0;
 function myFunction() {
-  if (messageCount > 17) return;
+  if (messageCount > 28) return;
   let element = document.getElementById("spin");
   element.classList.add("loading");
   element.classList.add("show");
@@ -20,13 +20,13 @@ function myFunction() {
   if (!btnMain.classList.contains("d-hide")) btnMain.classList.remove("d-hide");
   let image = document.getElementById("imageSelected");
   image.src = "scr/dragon-chimuelo-png-4-Transparent-Images.png";
-  if (messageCount == 14) image.src = "scr/heart.png";
   setTimeout(() => {
     element.classList.remove("loading");
     element.classList.remove("show");
     messageCount += 1;
     let messageSeleted = "";
     let messageBottonSelected = "";
+    if (messageCount == 26) image.src = "scr/heart.png";
     switch (messageCount) {
       case 1:
         messageSeleted =
@@ -98,20 +98,72 @@ function myFunction() {
         break;
       case 14:
         messageSeleted =
-          "'July, sé que estamos pasando uno bonito momento y la verdad quisiera saber si...'";
+          "'Es extraño como puedes conocer a una persona y que poco a poco comenzar a sentir cariño hacia ella...'";
         messageBottonSelected = "...";
         break;
       case 15:
-        messageSeleted = "¿Quieres Ser Mi Novia?";
+        messageSeleted =
+          "'Me gusta la manera en que me tratas, se siente tan lindo encontrar una persona con esa forma de expresar sus sentimientos...'";
+        messageBottonSelected = "...";
+        break;
+      case 16:
+        messageSeleted =
+          "'No sé si tu seas la persona final que estaba buscando...'";
+        messageBottonSelected = "...";
+        break;
+      case 17:
+        messageSeleted =
+          "'Porque hay muchas cosas aún que descubrir el uno del otro, pero...'";
+        messageBottonSelected = "...";
+        break;
+      case 18:
+        messageSeleted =
+          "'Creo el proceso de ir conociendo a la otra persona es lo bonito de querer algo con una persona y pues...'";
+        messageBottonSelected = "...";
+        break;
+      case 19:
+        messageSeleted =
+          "'No me importa nada más, contigo quiero arriesgarme entregándote todo lo que pueda de mi...'";
+        messageBottonSelected = "...";
+        break;
+      case 20:
+        messageSeleted =
+          "'Y sabes, yo no busco una persona perfecta ni yo tampoco lo soy...'";
+        messageBottonSelected = "...";
+        break;
+      case 21:
+        messageSeleted =
+          "'Solo busco alguien que me quiera de la misma manera que yo lo hago...'";
+        messageBottonSelected = "...";
+        break;
+      case 22:
+        messageSeleted =
+          "'Alguien con quien pueda crecer a su lado, que sea mi amiga, mi compañera, mi novia...'";
+        messageBottonSelected = "...";
+        break;
+      case 23:
+        messageSeleted = "'Y ese alguien quiero que seas tú...'";
+        messageBottonSelected = "...";
+        break;
+      case 24:
+        messageSeleted = "'Espero no haberte cansado con todo eso...'";
+        messageBottonSelected = "...";
+        break;
+      case 25:
+        messageSeleted = "'Bueno, hay una cosa más que me gustaría saber...'";
+        messageBottonSelected = "...";
+        break;
+      case 26:
+        messageSeleted = "¿July, Te Gustaría Ser Mi Novia?";
         messageBottonSelected = "Si Quiero!!!";
         btnNoResponse.classList.remove("d-hide");
         break;
-      case 16:
+      case 27:
         messageSeleted =
           "July, el propósito para el que fuí creado ha terminado, créeme que Danny estará muy Feliz con la noticia cuando se la cuente, o sabes qué, porque mejor no se lo dices tú.";
         messageBottonSelected = "...";
         break;
-      case 17:
+      case 28:
         messageSeleted =
           "No importa la hora que sea créeme que él estará muy emocionado de escucharte, inténtalo.";
         messageBottonSelected = "Llamar";
