@@ -1,6 +1,6 @@
 document.getElementById("text").innerHTML =
-  "Hola, me presento yo soy “Robby”, un pequeño programa creado por Danny para una chica muy especial, ¿Debes ser July verdad?";
-document.getElementById("nextButtom").innerHTML = "Sí";
+  "Hola nuevamente, no se si te acuerdas de mí soy: “Robby”, Me enteré de todo.";
+document.getElementById("nextButtom").innerHTML = "¿Cómo te enteraste?";
 
 let messageCount = 0;
 function myFunction() {
@@ -26,153 +26,147 @@ function myFunction() {
     messageCount += 1;
     let messageSeleted = "";
     let messageBottonSelected = "";
-    if (messageCount == 26) image.src = "scr/heart.png";
+    if (messageCount == 29) image.src = "scr/IMG-20230120-WA0007.jpg";
     switch (messageCount) {
       case 1:
         messageSeleted =
-          "Ya me lo imaginaba, Danny es muy cuidadoso en entregar la clave solo a la persona correcta.";
-        messageBottonSelected = "¿Enserio?";
+          "Es una larga historia, solo sé que pasaron muchas cosas muy lindas y otras malas.";
+        messageBottonSelected = "¿Qué te dijo?";
         const audio = document.querySelector("audio");
-        audio.volume = 0.2;
+        audio.volume = 0.8;
         audio.play();
         break;
       case 2:
         messageSeleted =
-          "Sabes, no había visto a Danny tan feliz hace mucho tiempo, tan emocionado esperando un mensaje de una chica.";
-        messageBottonSelected = "Continúa";
+          "Me dijo que desde el día que leíste esta carta, comenzó la historia más bonita que él habría tenido.";
+        messageBottonSelected = "¿Cuáles fueron esos momentos?";
         break;
       case 3:
         messageSeleted =
-          "He pasado con él muy poco tiempo y puede que a veces parezca una persona muy seria u ocupada";
-        messageBottonSelected = "Pues sí";
+          "Me contó de su primer viaje y lo emocionado que estaba por poder verte, no le importó viajar por horas solo por verte.";
+        messageBottonSelected = "Continuar";
         break;
       case 4:
         messageSeleted =
-          "Pero cuando una persona como tú le importa, dejaría todo de lado por hacerla feliz.";
-        messageBottonSelected = "Aún no te creo.";
+          "Me contó de su primera noche juntos, y de lo bonito que sintió al tenerte a su lado.";
+        messageBottonSelected = "Continuar";
         break;
       case 5:
         messageSeleted =
-          "¿Te digo un secreto? pero no se lo digas que yo te conté, si se entera que yo te lo dije, me podría eliminar.";
-        messageBottonSelected = "¡Prometo no decir Nada!";
+          "Me contó de su primera navidad juntos, y el deseo que escribió en el papelito.";
+        messageBottonSelected = "¿Cuál fue ese deseo?";
         break;
       case 6:
         messageSeleted =
-          "Debiste verlo el día que le confirmaste su primera cita, estaba tan emocionado esperando que llegue el día.";
-        messageBottonSelected = "...";
+          "Él pidió algo que se cumplió";
+        messageBottonSelected = "¿Qué?";
         break;
       case 7:
         messageSeleted =
-          "Muy nervioso y con una mirada llena de felicidad,	jaja con decirte que incluso plancho su camisa, ¿¡me lo puedes creer!?";
-        messageBottonSelected = "Jaja";
+          "Pidió que tú fueras feliz, desde lo más bonito de su corazón, sin importar que no sea con él.";
+        messageBottonSelected = "...";
         break;
       case 8:
         messageSeleted =
-          "Me confesó que hace mucho tiempo no se sentía tan contento.";
-        messageBottonSelected = "...";
+          "Pero me comentó que en enero pasó algo que los dejó muy dañados a ambos.";
+        messageBottonSelected = "Lo sé";
         break;
       case 9:
         messageSeleted =
-          "Pero me dijo que había algo que se le olvidó preguntarte";
-        messageBottonSelected = "¿Qué se le olvidó?";
+          "Me confesó que por más que trató, siempre sintió que él no fue suficiente";
+        messageBottonSelected = "...";
         break;
       case 10:
         messageSeleted =
-          "Aunque habían aclarado las cosas no sabía formalmente que eran ustedes dos.";
-        messageBottonSelected = "¿Te dijo algo más?";
+          "Sintió que él tuvo la culpa de todo lo que pasó en enero, él sintió que lo que pasó fue porque no te dio lo que tu merecías.";
+        messageBottonSelected = "Continuar";
         break;
       case 11:
         messageSeleted =
-          "Me dijo que buscó la mejor manera para decírtelo, pero no se le ocurría.";
-        messageBottonSelected = "¿Entonces?";
+          "No te culpes, tuviste tus razones, y él no supo entender.";
+        messageBottonSelected = "¿Qué pasó luego?";
         break;
       case 12:
         messageSeleted =
-          "Entonces pensó que yo podría ayudarlo preguntándote, ¿te interesa saber? ";
-        messageBottonSelected = "¡Sí!";
+          "Me contó que aún así siguieron intentándolo, porque pensaron que el amor que sentían era suficiente para sanar.";
+        messageBottonSelected = "¿Qué más te dijo?";
         break;
       case 13:
         messageSeleted =
-          "Entre tantas ideas que tenía en la mente, pensó que las palabras más sencillas y honestas serían suficientes.";
-        messageBottonSelected = "...";
+          "Sus ojitos se llenaron de lágrimas al decirme que se mandaban una notita diaria recórranse cuanto se amaban";
+        messageBottonSelected = "Sí, lo hacíamos...";
         break;
       case 14:
         messageSeleted =
-          "'Es extraño como puedes conocer a una persona y que poco a poco comenzar a sentir cariño hacia ella...'";
-        messageBottonSelected = "...";
+          "Me dijo que no había hecho eso con nadie y que lo hiciste sentir el hombre más especial, pero de igual manera se acabó...";
+        messageBottonSelected = "Sí, dejamos de hacerlo";
         break;
       case 15:
         messageSeleted =
-          "'Me gusta la manera en que me tratas, se siente tan lindo encontrar una persona con esa forma de expresar sus sentimientos...'";
-        messageBottonSelected = "...";
+          "Me contó que quería hacerte algo que no te habían hecho antes por tu cumpleaños para hacerte sentir especial";
+        messageBottonSelected = "Sí";
         break;
       case 16:
         messageSeleted =
-          "'No sé si tu seas la persona final que estaba buscando...'";
+          "Y que se sintió mal porque lo único que logro empeorar la situación";
         messageBottonSelected = "...";
         break;
       case 17:
         messageSeleted =
-          "'Porque hay muchas cosas aún que descubrir el uno del otro, pero...'";
-        messageBottonSelected = "...";
+          "Luego de eso las cosas se terminaron...";
+        messageBottonSelected = "Sí";
         break;
       case 18:
         messageSeleted =
-          "'Creo el proceso de ir conociendo a la otra persona es lo bonito de querer algo con una persona y pues...'";
-        messageBottonSelected = "...";
+          "¿Sabes? él es de las personas que cuando se termina se va sin mirar atrás, y por alguna razón a ti te intentó buscar";
+        messageBottonSelected = "Me lo había dicho";
         break;
       case 19:
         messageSeleted =
-          "'No me importa nada más, contigo quiero arriesgarme entregándote todo lo que pueda de mi...'";
-        messageBottonSelected = "...";
+          "Me dijo que prefería romper su orgullo y llamarte";
+        messageBottonSelected = "Si me llamó";
         break;
       case 20:
         messageSeleted =
-          "'Y sabes, yo no busco una persona perfecta ni yo tampoco lo soy...'";
+          "¿Sabes? Lo vi muchas madrugadas esperando una llamada o un mensaje porque no quería irse";
         messageBottonSelected = "...";
         break;
       case 21:
         messageSeleted =
-          "'Solo busco alguien que me quiera de la misma manera que yo lo hago...'";
-        messageBottonSelected = "...";
+          "No te culpes quizá no te dijo las palabras adecuadas cuando te llamó";
+        messageBottonSelected = "Entiendo";
         break;
       case 22:
         messageSeleted =
-          "'Alguien con quien pueda crecer a su lado, que sea mi amiga, mi compañera, mi novia...'";
-        messageBottonSelected = "...";
+        "No te dejes guiar por su actitud, lo vi muchas noches llorar pensando en tí, intentando sacar todas sus inseguridades";
+        messageBottonSelected = "¿Enserio?";
         break;
       case 23:
-        messageSeleted = "'Y ese alguien quiero que seas tú...'";
-        messageBottonSelected = "...";
+        messageSeleted =  "Nunca lo había visto tan enamorado... pero...";
+        messageBottonSelected = "¿Pero qué?";
         break;
       case 24:
-        messageSeleted = "'Espero no haberte cansado con todo eso...'";
+        messageSeleted = "Tampoco lo había visto tan roto...";
         messageBottonSelected = "...";
         break;
       case 25:
-        messageSeleted = "'Bueno, hay una cosa más que me gustaría saber...'";
-        messageBottonSelected = "...";
-        break;
+          messageSeleted = "Querida July, me despido de tí, Danny me había creado con un único propósito el cuál ha terminado";
+          messageBottonSelected = "¿Por qué me dices esto?";
+          break;
       case 26:
-        messageSeleted = "¿July, Te Gustaría Ser Mi Novia?";
-        messageBottonSelected = "Si Quiero!!!";
-        btnNoResponse.classList.remove("d-hide");
-        break;
+          messageSeleted = "Danny necesita perdonarse por todo lo que pasó, necesita sanar y reconstruirse";
+          messageBottonSelected = "Pero...";
+          break;
       case 27:
-        messageSeleted =
-          "July, el propósito para el que fuí creado ha terminado, créeme que Danny estará muy Feliz con la noticia cuando se la cuente, o sabes qué, porque mejor no se lo dices tú.";
-        messageBottonSelected = "...";
+        messageSeleted = "Discúlpalo porque no cumplió todas las promesas que te hizo, lo intentó";
+        messageBottonSelected = "Pero...";
         break;
       case 28:
-        messageSeleted =
-          "No importa la hora que sea créeme que él estará muy emocionado de escucharte, inténtalo.";
-        messageBottonSelected = "Llamar";
-        btnCall.classList.remove("d-hide");
-        btnSendMessage.classList.remove("d-hide");
-        btnMain.classList.add("d-hide");
-        break;
+          messageSeleted = "Te Amo Gatito, Gracias por compartir conmigo esta bonita historia, espero en otro punto de la vida volver a encontrarte y terminar la historia que empezamos.";
+          messageBottonSelected = "Fin";
+          break;
       default:
-        messageSeleted = "test 1";
+        messageSeleted = "...";
     }
     document.getElementById("text").innerHTML = messageSeleted;
     document.getElementById("nextButtom").innerHTML = messageBottonSelected;
