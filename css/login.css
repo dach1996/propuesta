@@ -36,12 +36,14 @@ h2 {
   margin-top: 0.5rem;
  }
 
-
+.img{
+  padding-left: 2em;
+}
 
 .register {
   box-shadow: 0 0 250px #2a2b38;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
 }
 .inputForm{
   font-size: 1.3rem;
